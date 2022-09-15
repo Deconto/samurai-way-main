@@ -1,13 +1,25 @@
 import React from 'react';
 import './App.css';
-import Header from "./Header";
-import Technologies from "./Technologies";
+import {Nav} from "./components/Nav/Nav";
+import {Header} from "./components/Header/Header";
+import {MyPosts} from "./components/Profile/MyPosts";
+
 
 const App = () => {
+
+    const sides = [
+        {id: 1, name: 'Profile'},
+        {id: 2, name: 'Messages'},
+        {id: 3, name: 'News'},
+        {id: 4, name: 'Music'},
+        {id: 5, name: 'Settings'}
+    ];
+
     return (
-        <div>
+        <div className='app-wrapper'>
             <Header/>
-            <Technologies/>
+            <Nav side={sides}/>
+            <MyPosts/>
         </div>
     );
 }
