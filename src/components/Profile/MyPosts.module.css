@@ -1,0 +1,13 @@
+.content {
+    grid-area: c;
+    background-color: coral;
+
+}
+
+.avatar_logo {
+    width: 50px;
+}
+
+.item {
+    color: blue;
+}
