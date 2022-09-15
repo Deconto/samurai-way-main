@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {Nav} from "./components/Nav/Nav";
 import {Header} from "./components/Header/Header";
-import {MyPosts} from "./components/Profile/MyPosts";
+import {Profile} from "./components/Profile/Profile";
 
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
         <div className='app-wrapper'>
             <Header/>
             <Nav side={sides}/>
-            <MyPosts/>
+            <Profile/>
         </div>
     );
 }

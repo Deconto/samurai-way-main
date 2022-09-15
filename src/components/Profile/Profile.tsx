@@ -1,8 +1,9 @@
 import React from "react";
-import s from './MyPosts.module.css';
+import s from './Profile.module.css';
+import {MyPosts} from "./MyPosts/MyPosts";
 
-export const MyPosts = () =>{
-    return(
+export const Profile = () => {
+    return (
         <div className={s.content}>
             <div>
                 <img
@@ -14,16 +15,7 @@ export const MyPosts = () =>{
                     src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"
                     alt="orange_logo" className={s.avatar_logo}/> + description
             </div>
-            <div>
-                My posts
-                <div>
-                    New post
-                </div>
-                <div>
-                    <div className={s.item}>post 1</div>
-                    <div>post 2</div>
-                </div>
-            </div>
+            <MyPosts/>
         </div>
     );
 }

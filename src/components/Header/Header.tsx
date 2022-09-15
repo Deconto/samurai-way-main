@@ -4,7 +4,7 @@ import s from './Header.module.css'
 export const Header = () =>{
     return(
         <header className={s.header}>
-            <img src='https://i.pinimg.com/736x/0d/cf/b5/0dcfb548989afdf22afff75e2a46a508.jpg' alt='head_img'/>
+            <img src='https://w7.pngwing.com/pngs/813/735/png-transparent-bird-of-prey-logo-beak-desktop-bird-animals-computer-logo.png' alt='header_logo'/>
         </header>
     )
 }
